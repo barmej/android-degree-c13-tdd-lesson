@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bmrView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_accent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="bmrOnClick"
+        android:text="@string/BMR"
+        android:textColor="@android:color/white"
+        android:textSize="75sp" />
+
+    <TextView
+        android:id="@+id/bmiView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_primary"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="bmiOnClick"
+        android:text="@string/BMI"
+        android:textColor="@android:color/white"
+        android:textSize="75sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/selector_primary_flipped"
+        android:onClick="userOnClick"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_male"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="20dp"
+            android:text="@string/no_user_press_to_add"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

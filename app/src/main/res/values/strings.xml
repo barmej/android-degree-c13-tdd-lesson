@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Healthy Family</string>
+    <string name="BMR" translatable="false">BMR</string>
+    <string name="BasalMetabolicRate">Basal Metabolic Rate</string>
+    <string name="BMI" translatable="false">BMI</string>
+    <string name="BodyMassIndex">Body Mass Index</string>
+    <string name="no_user_press_to_add">No user found! Press to add.</string>
+    <string name="add_user">Add User</string>
+    <string name="Weight">Weight</string>
+    <string name="Name">Name</string>
+    <string name="Height">Height</string>
+    <string name="add_a_user_name_weight_and_height">To add a user all the fields are required.</string>
+    <string name="TI">Total Intake (TI)</string>
+    <string name="Sedentary">Sedentary</string>
+    <string name="Active">Active</string>
+    <string name="VigorouslyActive">Vigorously Active</string>
+    <string name="Age">Age</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="kcalperDay">kcal/day</string>
+    <string name="kgperm2">kg/m2</string>
+    <string name="chooseUser">Choose/Add a user first.</string>
+    <string name="fieldIsRequired">Field Required</string>
+    <string name="kg">kg</string>
+    <string name="m">m</string>
+    <string name="cm">cm</string>
+    <string name="WeightInkg">Weight in kg</string>
+    <string name="HeightInCMeters">Height in cm</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">العائلة الصحية</string>
+    <string name="BasalMetabolicRate">معدل الأيض الأساسي (BMR)</string>
+    <string name="BodyMassIndex">مؤشر كتلة الجسم (BMI)</string>
+    <string name="no_user_press_to_add">لا يوجد مستخدم! قم بالضغط هنا لإضافة مستخدم.</string>
+    <string name="add_user">إضافة مستخدم</string>
+    <string name="Weight">الوزن</string>
+    <string name="Name">الإسم</string>
+    <string name="Height">الطول</string>
+    <string name="add_a_user_name_weight_and_height">كل البيانات التالية مطلوبة لإضافة مستخدم.</string>
+    <string name="TI">الاستهلاك الكلي (TI)</string>
+    <string name="Sedentary">قليل النشاط</string>
+    <string name="Active">نشاط طبيعي</string>
+    <string name="VigorouslyActive">عالي النشاط</string>
+    <string name="Age">العمر</string>
+    <string name="Male">ذكر</string>
+    <string name="Female">أنثى</string>
+    <string name="kcalperDay">سعرة حرارية باليوم</string>
+    <string name="kgperm2">كج/م٢</string>
+    <string name="chooseUser">قم باختيار/إضافة مستخدم أولا.</string>
+    <string name="fieldIsRequired">الحقل مطلوب</string>
+    <string name="kg">كج</string>
+    <string name="m">م</string>
+    <string name="cm">سم</string>
+    <string name="WeightInkg">الوزن بالكيلو جرام</string>
+    <string name="HeightInCMeters">الطول بالسنتيمتر</string>
+</resources>
