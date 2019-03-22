@@ -2,15 +2,18 @@ package barmej.com.healthyfamily;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
+import androidx.appcompat.app.AppCompatActivity;
+import barmej.com.healthyfamily.database.HFRoomDatabase;
 import barmej.com.healthyfamily.model.Gender;
 import barmej.com.healthyfamily.model.User;
+import barmej.com.healthyfamily.model.UserDAO;
+import barmej.com.healthyfamily.repository.UserRepository;
 
 public class AddUserActivity extends AppCompatActivity {
 
@@ -34,8 +37,21 @@ public class AddUserActivity extends AppCompatActivity {
         });
     }
 
-    private void saveUserTODB() {
-//        TODO Background task
+    private void saveUserTODB(final User user) {
+        final UserDAO userDAO = HFRoomDatabase.Companion.getDatabase(getApplicationContext()).userDAO();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                UserRepository repository = new UserRepository(userDAO);
+                repository.insert(user);
+
+                Intent intent = new Intent();
+                intent.putExtra(NEW_USER, user);
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        }).start();
+
     }
 
     public void addUserOnClick(View view) {
@@ -71,12 +87,7 @@ public class AddUserActivity extends AppCompatActivity {
 
         if (allRequiredField) {
             User user = new User(nameEditText.getText().toString(), Double.parseDouble(weightEditText.getText().toString()), Double.parseDouble(heightEditText.getText().toString()), Integer.parseInt(ageEditText.getText().toString()), gender);
-            saveUserTODB();
-
-            Intent intent = new Intent();
-            intent.putExtra(NEW_USER, user);
-            setResult(RESULT_OK, intent);
-            finish();
+            saveUserTODB(user);
         }
     }
 }

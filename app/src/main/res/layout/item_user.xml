@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:text="Abdullah"
-    android:id="@+id/userNameTextView"
-    android:textColor="@android:color/white"
-    tools:drawableStart="@tools:sample/avatars[4]"
-    android:drawablePadding="16dp"
-    android:gravity="center_vertical"
-    android:textSize="25sp"
-    tools:background="@color/colorPrimaryDark"/>
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_primary"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:src="@tools:sample/avatars[4]" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        tools:text="Abdullah" />
+</LinearLayout>

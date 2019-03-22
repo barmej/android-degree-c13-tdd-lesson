@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".BmActivity"></activity>
+        <activity android:name=".BmActivity" />
         <activity android:name=".BmiActivity" />
         <activity android:name=".AddUserActivity" />
         <activity android:name=".BmrActivity" />

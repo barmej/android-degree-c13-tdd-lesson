@@ -1,7 +1,7 @@
 package barmej.com.healthyfamily
 
-import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import barmej.com.healthyfamily.model.User
 
 open class BmActivity : AppCompatActivity() {
