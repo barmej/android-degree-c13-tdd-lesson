@@ -1,4 +1,4 @@
-# Healthy Family Android App (Base)
+# Healthy Family Android App (TDD Lesson)
 
 This is the repository for the Healthy Family app that students used to learn TDD in [the Android Degree at Barmej.com](https://www.barmej.com/degree/android)
 
