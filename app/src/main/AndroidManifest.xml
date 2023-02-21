@@ -17,10 +17,10 @@
         <activity android:name=".AddUserActivity" />
         <activity android:name=".BmrActivity" />
         <activity android:name=".UsersListActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
